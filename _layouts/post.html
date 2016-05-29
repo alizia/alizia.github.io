@@ -14,11 +14,13 @@ layout: default
   {{ content }}
 </div>
 
-
 {% if site.disqus %}
-<aside class="comments">
-  <h2 class="aside-title">Comments</h2>
-  <div id="disqus_thread">
+  <h2>Comments</h2>
+
+  {{ site.url }}{{ site.baseurl }}{{ page.url }}
+  {{ page.id }}
+
+  <div id="disqus_thread"></div>
 	  <script>
 	    var disqus_config = function () {
 	      this.page.url = '{{ site.url }}{{ site.baseurl }}{{ page.url }}';
@@ -39,6 +41,4 @@ layout: default
 	    });
 	  </script>
 	  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-	</div>
-</aside>
 {% endif %}

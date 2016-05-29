@@ -4,7 +4,7 @@ description:        "Thoughts on philosophy, artificial intelligence and compute
 url:                "aliababwa.com"
 baseurl:            ""
 permalink:          /:year/:month/:day/:title/
-disqus:             alialzia
+disqus:             aliababwa
 
 # Markdown
 markdown:           kramdown
