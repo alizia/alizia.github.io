@@ -1,0 +1,39 @@
+# Basic
+name:               "Ali Zia"
+description:        "Thoughts on philosophy, artificial intelligence and computer science."
+url:                "aliababwa.com"
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
+disqus:             alialzia
+
+# Markdown
+markdown:           kramdown
+
+# Navigation
+nav:
+  - name:           "About"
+    href:           "/about"
+  - name:           "Github"
+    href:           "//github.com/alizia"
+
+# Sass
+sass:
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-seo-tag
