@@ -2,7 +2,7 @@
 ---
 
 @import url(/fonts/Serif/cmun-serif.css);
-@import url(/fonts/Serif/cmun-serif-slanted.css);
+@import url(/fonts/Serif-Slanted/cmun-serif-slanted.css);
 
 * {
   -webkit-box-sizing: border-box;
@@ -373,6 +373,14 @@ tbody tr:nth-child(odd) th {
   a {
     color: #333;
   }
+}
+
+
+.comments-title {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
 }
 
 .highlight .hll { background-color: #ffffcc }

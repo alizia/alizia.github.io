@@ -15,15 +15,12 @@ layout: default
 </div>
 
 {% if site.disqus %}
-  <h2>Comments</h2>
-
-  {{ site.url }}{{ site.baseurl }}{{ page.url }}
-  {{ page.id }}
+  <h2 class="comments-title">Comments</h2>
 
   <div id="disqus_thread"></div>
 	  <script>
 	    var disqus_config = function () {
-	      this.page.url = '{{ site.url }}{{ site.baseurl }}{{ page.url }}';
+	      this.page.url = 'http://{{ site.url }}{{ site.baseurl }}{{ page.url }}';
 	      this.page.identifier = '{{ page.id }}';
 	    };
 
